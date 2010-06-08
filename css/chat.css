@@ -1,0 +1,118 @@
+body
+{
+	background: #e4e4e4;
+	font-family: "Helvetica Neue";
+	margin: 0;
+	padding: 0;
+}
+*
+{
+	outline: none;
+}
+a
+{
+	text-decoration: none;
+	border: 0;
+}
+a:hover, a:visited:hover
+{
+	color: #cd0606;
+}
+a:visited
+{
+	color: blue;
+}
+#chatBox
+{
+	width: 500px;
+	background: #fff;
+	padding: 0;
+	height: 400px;
+	box-shadow: 0 0 20px #414141;
+	-webkit-box-shadow: 0 0 20px #414141;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -250px;
+	position: absolute;
+}
+#chatBox #loading
+{
+	width: 16px;
+	height: 16px;
+	background: url(spinner.gif) no-repeat center center;
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+	position: absolute;
+}
+#chatBox #extras
+{
+	margin: -50px 0 10px 0;
+	width: 490px;
+	height: 20px;
+}
+#chatBox #extras input
+{
+	display: none;
+	padding: 5px;
+	margin: 10px 0 0 0;
+}
+#chatBox #extras #saveNickname
+{
+	display: none;
+	margin-left: 10px;
+}
+#chatBox #extras #editNickname p
+{
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+#chatBox #messages
+{
+	width: 500px;
+	height: 329px;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#chatBox #message
+{
+	margin: 0;
+	padding: 10px;
+	height: 50px;
+	border: none;
+	border-top: 1px #e4e4e4 solid;
+	max-height: 50px;
+	max-width: 479px;
+	min-height: 50px;
+	min-width: 479px;
+	width: 479px;
+}
+#chatBox #message:disabled
+{
+	color: #414141;
+}
+#chatBox #messages li
+{
+	padding: 10px;
+	width: 480px;
+	background: #a7c9ff;
+	border-bottom: 1px #ecebe8 solid;
+	border-top: 1px #bdcae0 solid;
+	font-size: 14px;
+	line-height: 20px;
+}
+#chatBox #messages li.alt
+{
+	background: #f2f5ff;
+	border-top: none;
+}
+#chatBox #shareChatLink
+{
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+	display: none;
+	color: #414141;
+}
