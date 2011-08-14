@@ -77,7 +77,7 @@ $(document).ready(function()
 				   	$.post("ajax/postMessage.php", { chatChannel:channel, "nickname":nickname, message:text }, function(data)
 				   	{
 			   			$("#messages").attr("scrollTop",$("#messages").attr("scrollHeight") - $('#messages').height());
-				   	    $('#message').text("");
+				   	    $('#message').val("");
 				   	    $('#message').attr("disabled","");
 				   	    $('#message').focus();
 				   	});
